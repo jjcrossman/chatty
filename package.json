@@ -1,0 +1,24 @@
+{
+  "name": "chatty",
+  "version": "1.0.0",
+  "description": "chatroom with no persistent data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjcrossman/chatty.git"
+  },
+  "author": "jj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjcrossman/chatty/issues"
+  },
+  "homepage": "https://github.com/jjcrossman/chatty#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
