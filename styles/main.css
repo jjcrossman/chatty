@@ -16,6 +16,10 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
 }
+
+.poster {
+  margin-bottom: 15px;
+}
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;

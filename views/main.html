@@ -1,14 +1,18 @@
 <div class="header">
   <h3 class="text-muted">chatty</h3>
+  <input ng-model="userName" type="text" placeholder="set username..."></input><button ng-click="setUserName( userName )">set username</button>
+  <div>
+    Current User: {{ currentUser }}
+  </div>
 </div>
 
 <h4>Latest Chats:</h4>
 <div class="jumbotron">
 
-	<form ng-submit="addMessage(newMessage)">
-		<input ng-model="newMessage" type="text" placeholder="Hello!">
+	<form class="poster" ng-submit="addMessage(newMessage, currentUser)">
+		<input ng-model="newMessage" type="text" placeholder="send a message...">
 	</form>
 
-	<div ng-repeat="message in messages track by $index">{{ message }}</div>
+	<div ng-repeat="message in messages track by $index">"{{ message.content }}" by '{{ message.author }}' on {{ message.time | date : ' hh:mm a' }}</div>
 
 </div>
